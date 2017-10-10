@@ -5,20 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/fontawesome")
+    @Styles.Render("~/Content/3rdpartycss")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application--TEst</p>
-        </footer>
+    <div class="body-home">
+
+        <div class="row body-wrapper">
+
+            <div class="col-md-3 sidebar-wrapper">
+
+                <section class="sidebar-vertical" style="width: 200px">
+                    <ul class="sidebar-menu">
+                        <li class="sidebar-header">OTIS China</li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-home"></i> <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-pencil-square-o"></i> <span>Contracts</span> <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#"><i class="fa fa-file-o"></i> New</a></li>
+                                <li><a href="#"><i class="fa fa-search"></i> Search</a></li>
+                                <li><a href="#"><i class="fa fa-check-square-o"></i> My Contracts</a></li>
+                                <li><a href="#"><i class="fa fa-pencil"></i> Amend</a></li>
+                                <li><a href="#"><i class="fa fa-wrench"></i> Change Status</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-gavel"></i> <span>Approvals</span></i>
+                                <span class="label label-primary pull-right">5</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-pie-chart"></i> <span>Evaluation</span></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-money"></i> <span>Payments</span> <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="sidebar-submenu">
+                                <li><a href="#"><i class="fa fa-file-o"></i> New</a></li>
+                                <li><a href="#"><i class="fa fa-search"></i> Search</a></li>
+                                <li><a href="#"><i class="fa fa-check-square-o"></i> Approve</a></li>
+                                <li><a href="#"><i class="fa fa-balance-scale"></i> Balance</a></li>
+                                <li><a href="#"><i class="fa fa-credit-card"></i> My Payments</a></li>
+                                <li><a href="#"><i class="fa fa-shopping-bag"></i> Orders</a></li>
+                                <li><a href="#"><i class="fa fa-shopping-basket"></i> My Orders</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-database"></i>
+                                <span>Master Data</span><i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="sidebar-submenu" style="display: none;">
+                                <li><a href="#"><i class="fa fa-users"></i> Users</a></li>
+                                <li><a href="#"><i class="fa fa-map-marker"></i> Venues</a></li>
+                                <li><a href="#"><i class="fa fa-address-card"></i> Wholesalers</a></li>
+                                <li><a href="#"><i class="fa fa-beer"></i> Brands</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-keyboard-o"></i>
+                                <span>Monthly Input</span><i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="sidebar-submenu" style="display: none;">
+                                <li><a href="#"><i class="fa fa-square"></i> SAP</a></li>
+                                <li><a href="#"><i class="fa fa-stack-overflow"></i> Stock Movement</a></li>
+                            </ul>
+                        </li>
+                       
+                    </ul>
+                </section>
+
+            </div>
+
+            <div class="col-md-9 content-wrapper">
+
+                <div class="body-content-wrapper">
+
+                    <div class="container body-content">
+
+                        @RenderBody()
+                        <hr />
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-    zas
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/3rdpartyjs")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script>
+        $.sidebarMenu($('.sidebar-menu'))
+        $.sidebarMenu($('.sidebar-menu-rtl'))
+    </script>
 </body>
 </html>
