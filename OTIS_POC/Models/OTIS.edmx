@@ -1,0 +1,1052 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="OTIS_POCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OTIS_POC.dbo.brand' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="brand">
+          <Property Name="Parent Brand" Type="nvarchar" MaxLength="255" />
+          <Property Name="Brand" Type="nvarchar" MaxLength="255" />
+          <Property Name="Brand description" Type="nvarchar" MaxLength="255" />
+          <Property Name="Brand Chinese Descrption" Type="nvarchar" MaxLength="255" />
+          <Property Name="Bottle size" Type="float" />
+          <Property Name="Pack Size" Type="float" />
+          <Property Name="Bott / 9L case" Type="float" />
+          <Property Name="NSV before FTT / 9L case" Type="float" />
+          <Property Name="COGS/CASE" Type="float" />
+          <Property Name="GP before FTT/CASE" Type="float" />
+          <Property Name="FG cost to Diageo/9L case" Type="float" />
+          <Property Name="Unit Cost" Type="float" />
+          <Property Name="Product number" Type="nvarchar" MaxLength="255" />
+          <Property Name="Key Brand" Type="nvarchar" MaxLength="255" />
+          <Property Name="Contract brand" Type="nvarchar" MaxLength="255" />
+          <Property Name="Order form brand" Type="nvarchar" MaxLength="255" />
+          <Property Name="F17" Type="nvarchar" MaxLength="255" />
+          <Property Name="F18" Type="nvarchar" MaxLength="255" />
+          <Property Name="F19" Type="nvarchar" MaxLength="255" />
+          <Property Name="F20" Type="nvarchar" MaxLength="255" />
+          <Property Name="F21" Type="nvarchar" MaxLength="255" />
+          <Property Name="F22" Type="nvarchar" MaxLength="255" />
+          <Property Name="F23" Type="nvarchar" MaxLength="255" />
+          <Property Name="F24" Type="nvarchar" MaxLength="255" />
+          <Property Name="F25" Type="nvarchar" MaxLength="255" />
+          <Property Name="F26" Type="nvarchar" MaxLength="255" />
+          <Property Name="F27" Type="nvarchar" MaxLength="255" />
+          <Property Name="F28" Type="nvarchar" MaxLength="255" />
+          <Property Name="F29" Type="nvarchar" MaxLength="255" />
+          <Property Name="F30" Type="nvarchar" MaxLength="255" />
+          <Property Name="F31" Type="nvarchar" MaxLength="255" />
+          <Property Name="F32" Type="nvarchar" MaxLength="255" />
+          <Property Name="F33" Type="nvarchar" MaxLength="255" />
+          <Property Name="F34" Type="nvarchar" MaxLength="255" />
+          <Property Name="F35" Type="nvarchar" MaxLength="255" />
+          <Property Name="F36" Type="nvarchar" MaxLength="255" />
+          <Property Name="F37" Type="nvarchar" MaxLength="255" />
+          <Property Name="F38" Type="nvarchar" MaxLength="255" />
+          <Property Name="F39" Type="nvarchar" MaxLength="255" />
+          <Property Name="F40" Type="nvarchar" MaxLength="255" />
+          <Property Name="F41" Type="nvarchar" MaxLength="255" />
+          <Property Name="F42" Type="nvarchar" MaxLength="255" />
+          <Property Name="F43" Type="nvarchar" MaxLength="255" />
+          <Property Name="F44" Type="nvarchar" MaxLength="255" />
+          <Property Name="F45" Type="nvarchar" MaxLength="255" />
+          <Property Name="F46" Type="nvarchar" MaxLength="255" />
+          <Property Name="F47" Type="nvarchar" MaxLength="255" />
+          <Property Name="F48" Type="nvarchar" MaxLength="255" />
+          <Property Name="F49" Type="nvarchar" MaxLength="255" />
+          <Property Name="F50" Type="nvarchar" MaxLength="255" />
+          <Property Name="F51" Type="nvarchar" MaxLength="255" />
+          <Property Name="F52" Type="nvarchar" MaxLength="255" />
+          <Property Name="F53" Type="nvarchar" MaxLength="255" />
+          <Property Name="F54" Type="nvarchar" MaxLength="255" />
+          <Property Name="F55" Type="nvarchar" MaxLength="255" />
+          <Property Name="F56" Type="nvarchar" MaxLength="255" />
+          <Property Name="F57" Type="nvarchar" MaxLength="255" />
+          <Property Name="F58" Type="nvarchar" MaxLength="255" />
+          <Property Name="F59" Type="nvarchar" MaxLength="255" />
+          <Property Name="F60" Type="nvarchar" MaxLength="255" />
+          <Property Name="F61" Type="nvarchar" MaxLength="255" />
+          <Property Name="F62" Type="nvarchar" MaxLength="255" />
+          <Property Name="F63" Type="nvarchar" MaxLength="255" />
+          <Property Name="F64" Type="nvarchar" MaxLength="255" />
+          <Property Name="F65" Type="nvarchar" MaxLength="255" />
+          <Property Name="F66" Type="nvarchar" MaxLength="255" />
+          <Property Name="F67" Type="nvarchar" MaxLength="255" />
+          <Property Name="F68" Type="nvarchar" MaxLength="255" />
+          <Property Name="F69" Type="nvarchar" MaxLength="255" />
+          <Property Name="F70" Type="nvarchar" MaxLength="255" />
+          <Property Name="F71" Type="nvarchar" MaxLength="255" />
+          <Property Name="F72" Type="nvarchar" MaxLength="255" />
+          <Property Name="F73" Type="nvarchar" MaxLength="255" />
+          <Property Name="F74" Type="nvarchar" MaxLength="255" />
+          <Property Name="F75" Type="nvarchar" MaxLength="255" />
+          <Property Name="F76" Type="nvarchar" MaxLength="255" />
+          <Property Name="F77" Type="nvarchar" MaxLength="255" />
+          <Property Name="F78" Type="nvarchar" MaxLength="255" />
+          <Property Name="F79" Type="nvarchar" MaxLength="255" />
+          <Property Name="F80" Type="nvarchar" MaxLength="255" />
+          <Property Name="F81" Type="nvarchar" MaxLength="255" />
+          <Property Name="F82" Type="nvarchar" MaxLength="255" />
+          <Property Name="F83" Type="nvarchar" MaxLength="255" />
+          <Property Name="F84" Type="nvarchar" MaxLength="255" />
+          <Property Name="F85" Type="nvarchar" MaxLength="255" />
+          <Property Name="F86" Type="nvarchar" MaxLength="255" />
+          <Property Name="F87" Type="nvarchar" MaxLength="255" />
+          <Property Name="F88" Type="nvarchar" MaxLength="255" />
+          <Property Name="F89" Type="nvarchar" MaxLength="255" />
+          <Property Name="F90" Type="nvarchar" MaxLength="255" />
+          <Property Name="F91" Type="nvarchar" MaxLength="255" />
+          <Property Name="F92" Type="nvarchar" MaxLength="255" />
+          <Property Name="F93" Type="nvarchar" MaxLength="255" />
+          <Property Name="F94" Type="nvarchar" MaxLength="255" />
+          <Property Name="F95" Type="nvarchar" MaxLength="255" />
+          <Property Name="F96" Type="nvarchar" MaxLength="255" />
+          <Property Name="F97" Type="nvarchar" MaxLength="255" />
+          <Property Name="F98" Type="nvarchar" MaxLength="255" />
+          <Property Name="F99" Type="nvarchar" MaxLength="255" />
+          <Property Name="F100" Type="nvarchar" MaxLength="255" />
+          <Property Name="F101" Type="nvarchar" MaxLength="255" />
+          <Property Name="F102" Type="nvarchar" MaxLength="255" />
+          <Property Name="F103" Type="nvarchar" MaxLength="255" />
+          <Property Name="F104" Type="nvarchar" MaxLength="255" />
+          <Property Name="F105" Type="nvarchar" MaxLength="255" />
+          <Property Name="F106" Type="nvarchar" MaxLength="255" />
+          <Property Name="F107" Type="nvarchar" MaxLength="255" />
+          <Property Name="F108" Type="nvarchar" MaxLength="255" />
+          <Property Name="F109" Type="nvarchar" MaxLength="255" />
+          <Property Name="F110" Type="nvarchar" MaxLength="255" />
+          <Property Name="F111" Type="nvarchar" MaxLength="255" />
+          <Property Name="F112" Type="nvarchar" MaxLength="255" />
+          <Property Name="F113" Type="nvarchar" MaxLength="255" />
+          <Property Name="F114" Type="nvarchar" MaxLength="255" />
+          <Property Name="F115" Type="nvarchar" MaxLength="255" />
+          <Property Name="F116" Type="nvarchar" MaxLength="255" />
+          <Property Name="F117" Type="nvarchar" MaxLength="255" />
+          <Property Name="F118" Type="nvarchar" MaxLength="255" />
+          <Property Name="F119" Type="nvarchar" MaxLength="255" />
+          <Property Name="F120" Type="nvarchar" MaxLength="255" />
+          <Property Name="F121" Type="nvarchar" MaxLength="255" />
+          <Property Name="F122" Type="nvarchar" MaxLength="255" />
+          <Property Name="F123" Type="nvarchar" MaxLength="255" />
+          <Property Name="F124" Type="nvarchar" MaxLength="255" />
+          <Property Name="F125" Type="nvarchar" MaxLength="255" />
+          <Property Name="F126" Type="nvarchar" MaxLength="255" />
+          <Property Name="F127" Type="nvarchar" MaxLength="255" />
+          <Property Name="F128" Type="nvarchar" MaxLength="255" />
+          <Property Name="F129" Type="nvarchar" MaxLength="255" />
+          <Property Name="F130" Type="nvarchar" MaxLength="255" />
+          <Property Name="F131" Type="nvarchar" MaxLength="255" />
+          <Property Name="F132" Type="nvarchar" MaxLength="255" />
+          <Property Name="F133" Type="nvarchar" MaxLength="255" />
+          <Property Name="F134" Type="nvarchar" MaxLength="255" />
+          <Property Name="F135" Type="nvarchar" MaxLength="255" />
+          <Property Name="F136" Type="nvarchar" MaxLength="255" />
+          <Property Name="F137" Type="nvarchar" MaxLength="255" />
+          <Property Name="F138" Type="nvarchar" MaxLength="255" />
+          <Property Name="F139" Type="nvarchar" MaxLength="255" />
+          <Property Name="F140" Type="nvarchar" MaxLength="255" />
+          <Property Name="F141" Type="nvarchar" MaxLength="255" />
+          <Property Name="F142" Type="nvarchar" MaxLength="255" />
+          <Property Name="F143" Type="nvarchar" MaxLength="255" />
+          <Property Name="F144" Type="nvarchar" MaxLength="255" />
+          <Property Name="F145" Type="nvarchar" MaxLength="255" />
+          <Property Name="F146" Type="nvarchar" MaxLength="255" />
+          <Property Name="F147" Type="nvarchar" MaxLength="255" />
+          <Property Name="F148" Type="nvarchar" MaxLength="255" />
+          <Property Name="F149" Type="nvarchar" MaxLength="255" />
+          <Property Name="F150" Type="nvarchar" MaxLength="255" />
+          <Property Name="F151" Type="nvarchar" MaxLength="255" />
+          <Property Name="F152" Type="nvarchar" MaxLength="255" />
+          <Property Name="F153" Type="nvarchar" MaxLength="255" />
+          <Property Name="F154" Type="nvarchar" MaxLength="255" />
+          <Property Name="F155" Type="nvarchar" MaxLength="255" />
+          <Property Name="F156" Type="nvarchar" MaxLength="255" />
+          <Property Name="F157" Type="nvarchar" MaxLength="255" />
+          <Property Name="F158" Type="nvarchar" MaxLength="255" />
+          <Property Name="F159" Type="nvarchar" MaxLength="255" />
+          <Property Name="F160" Type="nvarchar" MaxLength="255" />
+          <Property Name="F161" Type="nvarchar" MaxLength="255" />
+          <Property Name="F162" Type="nvarchar" MaxLength="255" />
+          <Property Name="F163" Type="nvarchar" MaxLength="255" />
+          <Property Name="F164" Type="nvarchar" MaxLength="255" />
+          <Property Name="F165" Type="nvarchar" MaxLength="255" />
+          <Property Name="F166" Type="nvarchar" MaxLength="255" />
+          <Property Name="F167" Type="nvarchar" MaxLength="255" />
+          <Property Name="F168" Type="nvarchar" MaxLength="255" />
+          <Property Name="F169" Type="nvarchar" MaxLength="255" />
+          <Property Name="F170" Type="nvarchar" MaxLength="255" />
+          <Property Name="F171" Type="nvarchar" MaxLength="255" />
+          <Property Name="F172" Type="nvarchar" MaxLength="255" />
+          <Property Name="F173" Type="nvarchar" MaxLength="255" />
+          <Property Name="F174" Type="nvarchar" MaxLength="255" />
+          <Property Name="F175" Type="nvarchar" MaxLength="255" />
+          <Property Name="F176" Type="nvarchar" MaxLength="255" />
+          <Property Name="F177" Type="nvarchar" MaxLength="255" />
+          <Property Name="F178" Type="nvarchar" MaxLength="255" />
+          <Property Name="F179" Type="nvarchar" MaxLength="255" />
+          <Property Name="F180" Type="nvarchar" MaxLength="255" />
+          <Property Name="F181" Type="nvarchar" MaxLength="255" />
+          <Property Name="F182" Type="nvarchar" MaxLength="255" />
+          <Property Name="F183" Type="nvarchar" MaxLength="255" />
+          <Property Name="F184" Type="nvarchar" MaxLength="255" />
+          <Property Name="F185" Type="nvarchar" MaxLength="255" />
+          <Property Name="F186" Type="nvarchar" MaxLength="255" />
+          <Property Name="F187" Type="nvarchar" MaxLength="255" />
+          <Property Name="F188" Type="nvarchar" MaxLength="255" />
+          <Property Name="F189" Type="nvarchar" MaxLength="255" />
+          <Property Name="F190" Type="nvarchar" MaxLength="255" />
+          <Property Name="F191" Type="nvarchar" MaxLength="255" />
+          <Property Name="F192" Type="nvarchar" MaxLength="255" />
+          <Property Name="F193" Type="nvarchar" MaxLength="255" />
+          <Property Name="F194" Type="nvarchar" MaxLength="255" />
+          <Property Name="F195" Type="nvarchar" MaxLength="255" />
+          <Property Name="F196" Type="nvarchar" MaxLength="255" />
+          <Property Name="F197" Type="nvarchar" MaxLength="255" />
+          <Property Name="F198" Type="nvarchar" MaxLength="255" />
+          <Property Name="F199" Type="nvarchar" MaxLength="255" />
+          <Property Name="F200" Type="nvarchar" MaxLength="255" />
+          <Property Name="F201" Type="nvarchar" MaxLength="255" />
+          <Property Name="F202" Type="nvarchar" MaxLength="255" />
+          <Property Name="F203" Type="nvarchar" MaxLength="255" />
+          <Property Name="F204" Type="nvarchar" MaxLength="255" />
+          <Property Name="F205" Type="nvarchar" MaxLength="255" />
+          <Property Name="F206" Type="nvarchar" MaxLength="255" />
+          <Property Name="F207" Type="nvarchar" MaxLength="255" />
+          <Property Name="F208" Type="nvarchar" MaxLength="255" />
+          <Property Name="F209" Type="nvarchar" MaxLength="255" />
+          <Property Name="F210" Type="nvarchar" MaxLength="255" />
+          <Property Name="F211" Type="nvarchar" MaxLength="255" />
+          <Property Name="F212" Type="nvarchar" MaxLength="255" />
+          <Property Name="F213" Type="nvarchar" MaxLength="255" />
+          <Property Name="F214" Type="nvarchar" MaxLength="255" />
+          <Property Name="F215" Type="nvarchar" MaxLength="255" />
+          <Property Name="F216" Type="nvarchar" MaxLength="255" />
+          <Property Name="F217" Type="nvarchar" MaxLength="255" />
+          <Property Name="F218" Type="nvarchar" MaxLength="255" />
+          <Property Name="F219" Type="nvarchar" MaxLength="255" />
+          <Property Name="F220" Type="nvarchar" MaxLength="255" />
+          <Property Name="F221" Type="nvarchar" MaxLength="255" />
+          <Property Name="F222" Type="nvarchar" MaxLength="255" />
+          <Property Name="F223" Type="nvarchar" MaxLength="255" />
+          <Property Name="GP/case after FTT-on" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <EntityType Name="Financials by Brand">
+          <Key>
+            <PropertyRef Name="Brand" />
+          </Key>
+          <Property Name="Brand" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Brand description" Type="nvarchar" MaxLength="255" />
+          <Property Name="Parent Brand" Type="nvarchar" MaxLength="255" />
+          <Property Name="Key Brand" Type="bit" />
+          <Property Name="Contract Brand" Type="bit" />
+          <Property Name="Bottle size" Type="float" />
+          <Property Name="Bott / 9L case" Type="float" />
+          <Property Name="NSV / 9L case" Type="float" />
+          <Property Name="GP / 9L case" Type="float" />
+          <Property Name="Target RPB" Type="float" />
+          <Property Name="Overachieve RPB" Type="float" />
+          <Property Name="Gold RPB" Type="float" />
+          <Property Name="Silver RPB" Type="float" />
+          <Property Name="Bronze RPB" Type="float" />
+          <Property Name="Gold TM" Type="float" />
+          <Property Name="Silver TM" Type="float" />
+          <Property Name="Bronze TM" Type="float" />
+          <Property Name="Gold BB min" Type="float" />
+          <Property Name="Silver BB min" Type="float" />
+          <Property Name="Bronze BB min" Type="float" />
+          <Property Name="BrandAlt" Type="nvarchar" MaxLength="255" />
+          <Property Name="Prodnumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="PackingSpec" Type="int" />
+          <Property Name="UnitPrice" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="SizeRatio" Type="decimal" Precision="10" Scale="7" />
+          <Property Name="COGs" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="FG Cost" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="OrderForm" Type="bit" />
+          <Property Name="NaturalCases" Type="decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="tblApprovalType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="ApproveType" Type="nvarchar" MaxLength="50" />
+          <Property Name="Order" Type="int" />
+          <Property Name="NSOrder" Type="int" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblApprovers">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Role" Type="int" />
+          <Property Name="Region" Type="nvarchar" MaxLength="50" />
+          <Property Name="Brand" Type="nvarchar" MaxLength="50" />
+          <Property Name="username" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="tblContract">
+          <Key>
+            <PropertyRef Name="Contract Code" />
+          </Key>
+          <Property Name="Contract Code" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Outlet Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Region" Type="nvarchar" MaxLength="255" />
+          <Property Name="City" Type="nvarchar" MaxLength="10" />
+          <Property Name="CDOS" Type="nvarchar" MaxLength="255" />
+          <Property Name="Start Date" Type="smalldatetime" />
+          <Property Name="End Date" Type="datetime" />
+          <Property Name="Cancel Date" Type="smalldatetime" />
+          <Property Name="Corrected End Date" Type="datetime" />
+          <Property Name="Real Month" Type="int" />
+          <Property Name="Volume" Type="float" />
+          <Property Name="NSV" Type="float" />
+          <Property Name="GP" Type="float" />
+          <Property Name="Vol related" Type="float" />
+          <Property Name="Non Vol related" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Non Vol FTT" Type="float" />
+          <Property Name="FTT" Type="float" />
+          <Property Name="CAAP pre A&amp;P" Type="float" />
+          <Property Name="A&amp;P" Type="float" />
+          <Property Name="CAAP" Type="float" />
+          <Property Name="Investment" Type="float" />
+          <Property Name="Source" Type="nvarchar" MaxLength="50" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
+          <Property Name="Payment Months" Type="int" />
+          <Property Name="Legal Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Bonus" Type="float" />
+          <Property Name="ConsF" Type="float" />
+          <Property Name="Display" Type="float" />
+          <Property Name="Listing" Type="float" />
+          <Property Name="Promo" Type="float" />
+          <Property Name="Sponsor" Type="float" />
+          <Property Name="Party" Type="float" />
+          <Property Name="POSM" Type="float" />
+          <Property Name="Other" Type="float" />
+          <Property Name="SchBonus" Type="nvarchar" MaxLength="80" />
+          <Property Name="SchDisplay" Type="nvarchar" MaxLength="80" />
+          <Property Name="SchListing" Type="nvarchar" MaxLength="80" />
+          <Property Name="SchPromo" Type="nvarchar" MaxLength="80" />
+          <Property Name="SchSponsor" Type="nvarchar" MaxLength="80" />
+          <Property Name="SchParty" Type="nvarchar" MaxLength="80" />
+          <Property Name="SchPOSM" Type="nvarchar" MaxLength="80" />
+          <Property Name="SchOther" Type="nvarchar" MaxLength="80" />
+          <Property Name="SchConsF" Type="nvarchar" MaxLength="80" />
+          <Property Name="PM_Bonus" Type="char" MaxLength="2" />
+          <Property Name="PM_Display" Type="char" MaxLength="2" />
+          <Property Name="PM_Listing" Type="char" MaxLength="2" />
+          <Property Name="PM_Promo" Type="char" MaxLength="2" />
+          <Property Name="PM_Sponsor" Type="char" MaxLength="2" />
+          <Property Name="PM_Party" Type="char" MaxLength="2" />
+          <Property Name="PM_ConsF" Type="char" MaxLength="2" />
+          <Property Name="PM_POSM" Type="char" MaxLength="2" />
+          <Property Name="AlcoholPermitObtained" Type="bit" />
+          <Property Name="ServiceInvoiceAvailable" Type="bit" />
+          <Property Name="TaxRegistrationNational" Type="bit" />
+          <Property Name="TaxRegistrationLocal" Type="bit" />
+          <Property Name="BusinessLicense" Type="bit" />
+          <Property Name="OrganisationCodeCertificate" Type="bit" />
+          <Property Name="IDcard" Type="bit" />
+          <Property Name="TaxCertificate" Type="bit" />
+          <Property Name="BankAccountPermission" Type="bit" />
+          <Property Name="Outlet" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" />
+          <Property Name="ContractType" Type="char" MaxLength="10" />
+          <Property Name="AssignedTo" Type="nvarchar" MaxLength="255" />
+          <Property Name="ModifiedDate" Type="datetime" />
+          <Property Name="CashPayableOutlet" Type="bit" />
+          <Property Name="ReplacingCompetition" Type="bit" />
+          <Property Name="SchRPB" Type="nvarchar" MaxLength="50" />
+          <Property Name="PM_RPB" Type="char" MaxLength="2" />
+          <Property Name="SignatureDate" Type="smalldatetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OTIS_POC.dbo.tblContractData' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="tblContractData">
+          <Property Name="Data Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="Contract Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="Investment Type" Type="nvarchar" MaxLength="10" />
+          <Property Name="Brand" Type="nvarchar" MaxLength="50" />
+          <Property Name="Bottle Target Volume" Type="float" />
+          <Property Name="cRPB" Type="float" />
+          <Property Name="Vol related" Type="float" />
+          <Property Name="Overachieve RPB" Type="float" />
+          <Property Name="non vol related" Type="float" />
+          <Property Name="Pure FTT non vol" Type="float" />
+          <Property Name="RRPB" Type="float" />
+          <Property Name="RRPBftt" Type="float" />
+          <Property Name="Bonus" Type="float" />
+          <Property Name="ConsF" Type="float" />
+          <Property Name="Display" Type="float" />
+          <Property Name="Listing" Type="float" />
+          <Property Name="Promo" Type="float" />
+          <Property Name="Sponsor" Type="float" />
+          <Property Name="Party" Type="float" />
+          <Property Name="POSM" Type="float" />
+          <Property Name="Other" Type="float" />
+          <Property Name="Case Volume" Type="float" />
+          <Property Name="NSV" Type="float" />
+          <Property Name="GP" Type="float" />
+          <Property Name="FTT" Type="float" />
+          <Property Name="CAAP pre A&amp;P" Type="float" />
+          <Property Name="A&amp;P" Type="float" />
+          <Property Name="Investment" Type="float" />
+          <Property Name="CAAP" Type="float" />
+          <Property Name="CAAP/case" Type="float" />
+          <Property Name="Vol data source" Type="nvarchar" MaxLength="50" />
+          <Property Name="FTT split source" Type="nvarchar" MaxLength="50" />
+          <Property Name="TradeMarketing" Type="float" />
+          <Property Name="MonthlyVolume" Type="float" />
+          <Property Name="PartyCost" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="POSMCost" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="SWAP" Type="bit" />
+          <Property Name="80/100" Type="bit" />
+          <Property Name="TargetCollection" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OTIS_POC.dbo.tblContractNotes' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="tblContractNotes">
+          <Property Name="Contract Code" Type="nvarchar" MaxLength="255" />
+          <Property Name="Reason" Type="ntext" />
+          <Property Name="CompetitionDoing" Type="ntext" />
+          <Property Name="Notes" Type="ntext" />
+          <Property Name="Competition" Type="nvarchar" MaxLength="255" />
+          <Property Name="CompetitionBrand" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <EntityType Name="tblContractType">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'OTIS_POC.dbo.tblLanguage' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="tblLanguage">
+          <Property Name="Code" Type="int" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="DescriptionAlt" Type="nvarchar" MaxLength="50" />
+        </EntityType>-->
+        <EntityType Name="tblRegion">
+          <Key>
+            <PropertyRef Name="Region" />
+          </Key>
+          <Property Name="Region" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DescriptionAlt" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tblUser">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LoginId" Type="nvarchar" MaxLength="100" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Region" Type="nvarchar" MaxLength="255" />
+          <Property Name="Admin" Type="int" Nullable="false" />
+          <Property Name="DefaultLang" Type="int" />
+          <Property Name="LastUseDate" Type="nvarchar" MaxLength="50" />
+          <Property Name="bReadOnly" Type="bit" />
+          <Property Name="bKRSA" Type="int" />
+          <Property Name="Active" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblWholesaler">
+          <Key>
+            <PropertyRef Name="code" />
+          </Key>
+          <Property Name="code" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="50" />
+          <Property Name="maxdiscount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Wholesaler/Ad agency" Type="char" MaxLength="1" />
+          <Property Name="Tier" Type="int" />
+          <Property Name="Business address" Type="nvarchar" MaxLength="255" />
+          <Property Name="Region" Type="nvarchar" MaxLength="50" />
+          <Property Name="City" Type="nvarchar" MaxLength="10" />
+          <Property Name="2nd tier wholesalers supported" Type="bit" />
+          <Property Name="Outlets supported" Type="bit" />
+          <Property Name="Primary contact" Type="nvarchar" MaxLength="255" />
+          <Property Name="Telephone number" Type="nvarchar" MaxLength="50" />
+          <Property Name="Primary DCL contact" Type="nvarchar" MaxLength="255" />
+          <Property Name="CashPool" Type="bit" />
+          <Property Name="SAPnumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="ApplyFixedDiscount" Type="bit" />
+          <Property Name="WholesalerCode" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Venues">
+          <Key>
+            <PropertyRef Name="VENUE CODE" />
+          </Key>
+          <Property Name="VENUE CODE" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="Excel Number" Type="float" />
+          <Property Name="Region" Type="nvarchar" MaxLength="50" />
+          <Property Name="Province" Type="nvarchar" MaxLength="50" />
+          <Property Name="City Ch" Type="nvarchar" MaxLength="255" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" />
+          <Property Name="Outlet Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Channel" Type="nvarchar" MaxLength="50" />
+          <Property Name="CDOS" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sub type" Type="nvarchar" MaxLength="255" />
+          <Property Name="Class" Type="nvarchar" MaxLength="50" />
+          <Property Name="Size" Type="nvarchar" MaxLength="255" />
+          <Property Name="Number of tables" Type="float" />
+          <Property Name="Number of rooms" Type="float" />
+          <Property Name="Address" Type="nvarchar" MaxLength="255" />
+          <Property Name="Telephone" Type="nvarchar" MaxLength="53" />
+          <Property Name="Owner" Type="nvarchar" MaxLength="255" />
+          <Property Name="Owner's telephone" Type="nvarchar" MaxLength="53" />
+          <Property Name="Contact" Type="nvarchar" MaxLength="255" />
+          <Property Name="Contact's telephone" Type="nvarchar" MaxLength="53" />
+          <Property Name="Sales Man" Type="nvarchar" MaxLength="50" />
+          <Property Name="Distributor" Type="int" />
+          <Property Name="Contract Outlet" Type="bit" Nullable="false" />
+          <Property Name="Part of a chain" Type="bit" Nullable="false" />
+          <Property Name="GroupCode" Type="int" />
+          <Property Name="Multi-venue" Type="bit" />
+          <Property Name="BottlesOfSales" Type="bigint" />
+          <Property Name="Business license address" Type="nvarchar" MaxLength="255" />
+          <Property Name="2ndDistributor" Type="int" />
+          <Property Name="LegalName" Type="nvarchar" MaxLength="255" />
+          <Property Name="StoreName" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <Association Name="FK_tblApprovers_tblApprovers">
+          <End Role="tblApprovers" Type="Self.tblApprovers" Multiplicity="1" />
+          <End Role="tblApprovers1" Type="Self.tblApprovers" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblApprovers">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tblApprovers1">
+              <PropertyRef Name="id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="OTIS_POCModelStoreContainer">
+          <EntitySet Name="Financials by Brand" EntityType="Self.Financials by Brand" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblApprovalType" EntityType="Self.tblApprovalType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblApprovers" EntityType="Self.tblApprovers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblContract" EntityType="Self.tblContract" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblContractType" EntityType="Self.tblContractType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblRegion" EntityType="Self.tblRegion" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblWholesaler" EntityType="Self.tblWholesaler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Venues" EntityType="Self.Venues" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_tblApprovers_tblApprovers" Association="Self.FK_tblApprovers_tblApprovers">
+            <End Role="tblApprovers" EntitySet="tblApprovers" />
+            <End Role="tblApprovers1" EntitySet="tblApprovers" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="OTIS_POCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Financials_by_Brand">
+          <Key>
+            <PropertyRef Name="Brand" />
+          </Key>
+          <Property Name="Brand" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Brand_description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Parent_Brand" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Key_Brand" Type="Boolean" />
+          <Property Name="Contract_Brand" Type="Boolean" />
+          <Property Name="Bottle_size" Type="Double" />
+          <Property Name="Bott___9L_case" Type="Double" />
+          <Property Name="NSV___9L_case" Type="Double" />
+          <Property Name="GP___9L_case" Type="Double" />
+          <Property Name="Target_RPB" Type="Double" />
+          <Property Name="Overachieve_RPB" Type="Double" />
+          <Property Name="Gold_RPB" Type="Double" />
+          <Property Name="Silver_RPB" Type="Double" />
+          <Property Name="Bronze_RPB" Type="Double" />
+          <Property Name="Gold_TM" Type="Double" />
+          <Property Name="Silver_TM" Type="Double" />
+          <Property Name="Bronze_TM" Type="Double" />
+          <Property Name="Gold_BB_min" Type="Double" />
+          <Property Name="Silver_BB_min" Type="Double" />
+          <Property Name="Bronze_BB_min" Type="Double" />
+          <Property Name="BrandAlt" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Prodnumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PackingSpec" Type="Int32" />
+          <Property Name="UnitPrice" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="SizeRatio" Type="Decimal" Precision="10" Scale="7" />
+          <Property Name="COGs" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="FG_Cost" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="OrderForm" Type="Boolean" />
+          <Property Name="NaturalCases" Type="Decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="tblApprovalType">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="ApproveType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Order" Type="Int32" />
+          <Property Name="NSOrder" Type="Int32" />
+          <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tblApprover">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Role" Type="Int32" />
+          <Property Name="Region" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Brand" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="username" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tblApprovers1" Relationship="Self.FK_tblApprovers_tblApprovers" FromRole="tblApprovers" ToRole="tblApprovers1" />
+          <NavigationProperty Name="tblApprover1" Relationship="Self.FK_tblApprovers_tblApprovers" FromRole="tblApprovers1" ToRole="tblApprovers" />
+        </EntityType>
+        <EntityType Name="tblContract">
+          <Key>
+            <PropertyRef Name="Contract_Code" />
+          </Key>
+          <Property Name="Contract_Code" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Outlet_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Region" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="CDOS" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Start_Date" Type="DateTime" Precision="0" />
+          <Property Name="End_Date" Type="DateTime" Precision="3" />
+          <Property Name="Cancel_Date" Type="DateTime" Precision="0" />
+          <Property Name="Corrected_End_Date" Type="DateTime" Precision="3" />
+          <Property Name="Real_Month" Type="Int32" />
+          <Property Name="Volume" Type="Double" />
+          <Property Name="NSV" Type="Double" />
+          <Property Name="GP" Type="Double" />
+          <Property Name="Vol_related" Type="Double" />
+          <Property Name="Non_Vol_related" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Non_Vol_FTT" Type="Double" />
+          <Property Name="FTT" Type="Double" />
+          <Property Name="CAAP_pre_A_P" Type="Double" />
+          <Property Name="A_P" Type="Double" />
+          <Property Name="CAAP" Type="Double" />
+          <Property Name="Investment" Type="Double" />
+          <Property Name="Source" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Payment_Months" Type="Int32" />
+          <Property Name="Legal_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Bonus" Type="Double" />
+          <Property Name="ConsF" Type="Double" />
+          <Property Name="Display" Type="Double" />
+          <Property Name="Listing" Type="Double" />
+          <Property Name="Promo" Type="Double" />
+          <Property Name="Sponsor" Type="Double" />
+          <Property Name="Party" Type="Double" />
+          <Property Name="POSM" Type="Double" />
+          <Property Name="Other" Type="Double" />
+          <Property Name="SchBonus" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="SchDisplay" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="SchListing" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="SchPromo" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="SchSponsor" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="SchParty" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="SchPOSM" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="SchOther" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="SchConsF" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="PM_Bonus" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="PM_Display" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="PM_Listing" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="PM_Promo" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="PM_Sponsor" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="PM_Party" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="PM_ConsF" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="PM_POSM" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="AlcoholPermitObtained" Type="Boolean" />
+          <Property Name="ServiceInvoiceAvailable" Type="Boolean" />
+          <Property Name="TaxRegistrationNational" Type="Boolean" />
+          <Property Name="TaxRegistrationLocal" Type="Boolean" />
+          <Property Name="BusinessLicense" Type="Boolean" />
+          <Property Name="OrganisationCodeCertificate" Type="Boolean" />
+          <Property Name="IDcard" Type="Boolean" />
+          <Property Name="TaxCertificate" Type="Boolean" />
+          <Property Name="BankAccountPermission" Type="Boolean" />
+          <Property Name="Outlet" Type="Int32" />
+          <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+          <Property Name="ContractType" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="AssignedTo" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="CashPayableOutlet" Type="Boolean" />
+          <Property Name="ReplacingCompetition" Type="Boolean" />
+          <Property Name="SchRPB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PM_RPB" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+          <Property Name="SignatureDate" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tblContractType">
+          <Key>
+            <PropertyRef Name="Code" />
+          </Key>
+          <Property Name="Code" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tblRegion">
+          <Key>
+            <PropertyRef Name="Region" />
+          </Key>
+          <Property Name="Region" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DescriptionAlt" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tblUser">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LoginId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Region" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Admin" Type="Int32" Nullable="false" />
+          <Property Name="DefaultLang" Type="Int32" />
+          <Property Name="LastUseDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="bReadOnly" Type="Boolean" />
+          <Property Name="bKRSA" Type="Int32" />
+          <Property Name="Active" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tblWholesaler">
+          <Key>
+            <PropertyRef Name="code" />
+          </Key>
+          <Property Name="code" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="maxdiscount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Wholesaler_Ad_agency" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="Tier" Type="Int32" />
+          <Property Name="Business_address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Region" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="C2nd_tier_wholesalers_supported" Type="Boolean" />
+          <Property Name="Outlets_supported" Type="Boolean" />
+          <Property Name="Primary_contact" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Telephone_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Primary_DCL_contact" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CashPool" Type="Boolean" />
+          <Property Name="SAPnumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ApplyFixedDiscount" Type="Boolean" />
+          <Property Name="WholesalerCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Venue">
+          <Key>
+            <PropertyRef Name="VENUE_CODE" />
+          </Key>
+          <Property Name="VENUE_CODE" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Excel_Number" Type="Double" />
+          <Property Name="Region" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Province" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="City_Ch" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Outlet_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Channel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CDOS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sub_type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Class" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Size" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Number_of_tables" Type="Double" />
+          <Property Name="Number_of_rooms" Type="Double" />
+          <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Telephone" Type="String" MaxLength="53" FixedLength="false" Unicode="true" />
+          <Property Name="Owner" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Owner_s_telephone" Type="String" MaxLength="53" FixedLength="false" Unicode="true" />
+          <Property Name="Contact" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Contact_s_telephone" Type="String" MaxLength="53" FixedLength="false" Unicode="true" />
+          <Property Name="Sales_Man" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Distributor" Type="Int32" />
+          <Property Name="Contract_Outlet" Type="Boolean" Nullable="false" />
+          <Property Name="Part_of_a_chain" Type="Boolean" Nullable="false" />
+          <Property Name="GroupCode" Type="Int32" />
+          <Property Name="Multi_venue" Type="Boolean" />
+          <Property Name="BottlesOfSales" Type="Int64" />
+          <Property Name="Business_license_address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="C2ndDistributor" Type="Int32" />
+          <Property Name="LegalName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="StoreName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_tblApprovers_tblApprovers">
+          <End Role="tblApprovers" Type="Self.tblApprover" Multiplicity="1" />
+          <End Role="tblApprovers1" Type="Self.tblApprover" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="tblApprovers">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="tblApprovers1">
+              <PropertyRef Name="id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="OTIS_POCEntitiesNew" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Financials_by_Brands" EntityType="Self.Financials_by_Brand" />
+          <EntitySet Name="tblApprovalTypes" EntityType="Self.tblApprovalType" />
+          <EntitySet Name="tblApprovers" EntityType="Self.tblApprover" />
+          <EntitySet Name="tblContracts" EntityType="Self.tblContract" />
+          <EntitySet Name="tblContractTypes" EntityType="Self.tblContractType" />
+          <EntitySet Name="tblRegions" EntityType="Self.tblRegion" />
+          <EntitySet Name="tblUsers" EntityType="Self.tblUser" />
+          <EntitySet Name="tblWholesalers" EntityType="Self.tblWholesaler" />
+          <EntitySet Name="Venues" EntityType="Self.Venue" />
+          <AssociationSet Name="FK_tblApprovers_tblApprovers" Association="Self.FK_tblApprovers_tblApprovers">
+            <End Role="tblApprovers" EntitySet="tblApprovers" />
+            <End Role="tblApprovers1" EntitySet="tblApprovers" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="OTIS_POCModelStoreContainer" CdmEntityContainer="OTIS_POCEntitiesNew">
+          <EntitySetMapping Name="Financials_by_Brands">
+            <EntityTypeMapping TypeName="OTIS_POCModel.Financials_by_Brand">
+              <MappingFragment StoreEntitySet="Financials by Brand">
+                <ScalarProperty Name="Brand" ColumnName="Brand" />
+                <ScalarProperty Name="Brand_description" ColumnName="Brand description" />
+                <ScalarProperty Name="Parent_Brand" ColumnName="Parent Brand" />
+                <ScalarProperty Name="Key_Brand" ColumnName="Key Brand" />
+                <ScalarProperty Name="Contract_Brand" ColumnName="Contract Brand" />
+                <ScalarProperty Name="Bottle_size" ColumnName="Bottle size" />
+                <ScalarProperty Name="Bott___9L_case" ColumnName="Bott / 9L case" />
+                <ScalarProperty Name="NSV___9L_case" ColumnName="NSV / 9L case" />
+                <ScalarProperty Name="GP___9L_case" ColumnName="GP / 9L case" />
+                <ScalarProperty Name="Target_RPB" ColumnName="Target RPB" />
+                <ScalarProperty Name="Overachieve_RPB" ColumnName="Overachieve RPB" />
+                <ScalarProperty Name="Gold_RPB" ColumnName="Gold RPB" />
+                <ScalarProperty Name="Silver_RPB" ColumnName="Silver RPB" />
+                <ScalarProperty Name="Bronze_RPB" ColumnName="Bronze RPB" />
+                <ScalarProperty Name="Gold_TM" ColumnName="Gold TM" />
+                <ScalarProperty Name="Silver_TM" ColumnName="Silver TM" />
+                <ScalarProperty Name="Bronze_TM" ColumnName="Bronze TM" />
+                <ScalarProperty Name="Gold_BB_min" ColumnName="Gold BB min" />
+                <ScalarProperty Name="Silver_BB_min" ColumnName="Silver BB min" />
+                <ScalarProperty Name="Bronze_BB_min" ColumnName="Bronze BB min" />
+                <ScalarProperty Name="BrandAlt" ColumnName="BrandAlt" />
+                <ScalarProperty Name="Prodnumber" ColumnName="Prodnumber" />
+                <ScalarProperty Name="PackingSpec" ColumnName="PackingSpec" />
+                <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+                <ScalarProperty Name="SizeRatio" ColumnName="SizeRatio" />
+                <ScalarProperty Name="COGs" ColumnName="COGs" />
+                <ScalarProperty Name="FG_Cost" ColumnName="FG Cost" />
+                <ScalarProperty Name="OrderForm" ColumnName="OrderForm" />
+                <ScalarProperty Name="NaturalCases" ColumnName="NaturalCases" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblApprovalTypes">
+            <EntityTypeMapping TypeName="OTIS_POCModel.tblApprovalType">
+              <MappingFragment StoreEntitySet="tblApprovalType">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="ApproveType" ColumnName="ApproveType" />
+                <ScalarProperty Name="Order" ColumnName="Order" />
+                <ScalarProperty Name="NSOrder" ColumnName="NSOrder" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblApprovers">
+            <EntityTypeMapping TypeName="OTIS_POCModel.tblApprover">
+              <MappingFragment StoreEntitySet="tblApprovers">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="Brand" ColumnName="Brand" />
+                <ScalarProperty Name="username" ColumnName="username" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblContracts">
+            <EntityTypeMapping TypeName="OTIS_POCModel.tblContract">
+              <MappingFragment StoreEntitySet="tblContract">
+                <ScalarProperty Name="Contract_Code" ColumnName="Contract Code" />
+                <ScalarProperty Name="Outlet_Name" ColumnName="Outlet Name" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="CDOS" ColumnName="CDOS" />
+                <ScalarProperty Name="Start_Date" ColumnName="Start Date" />
+                <ScalarProperty Name="End_Date" ColumnName="End Date" />
+                <ScalarProperty Name="Cancel_Date" ColumnName="Cancel Date" />
+                <ScalarProperty Name="Corrected_End_Date" ColumnName="Corrected End Date" />
+                <ScalarProperty Name="Real_Month" ColumnName="Real Month" />
+                <ScalarProperty Name="Volume" ColumnName="Volume" />
+                <ScalarProperty Name="NSV" ColumnName="NSV" />
+                <ScalarProperty Name="GP" ColumnName="GP" />
+                <ScalarProperty Name="Vol_related" ColumnName="Vol related" />
+                <ScalarProperty Name="Non_Vol_related" ColumnName="Non Vol related" />
+                <ScalarProperty Name="Non_Vol_FTT" ColumnName="Non Vol FTT" />
+                <ScalarProperty Name="FTT" ColumnName="FTT" />
+                <ScalarProperty Name="CAAP_pre_A_P" ColumnName="CAAP pre A&amp;P" />
+                <ScalarProperty Name="A_P" ColumnName="A&amp;P" />
+                <ScalarProperty Name="CAAP" ColumnName="CAAP" />
+                <ScalarProperty Name="Investment" ColumnName="Investment" />
+                <ScalarProperty Name="Source" ColumnName="Source" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Payment_Months" ColumnName="Payment Months" />
+                <ScalarProperty Name="Legal_Name" ColumnName="Legal Name" />
+                <ScalarProperty Name="Bonus" ColumnName="Bonus" />
+                <ScalarProperty Name="ConsF" ColumnName="ConsF" />
+                <ScalarProperty Name="Display" ColumnName="Display" />
+                <ScalarProperty Name="Listing" ColumnName="Listing" />
+                <ScalarProperty Name="Promo" ColumnName="Promo" />
+                <ScalarProperty Name="Sponsor" ColumnName="Sponsor" />
+                <ScalarProperty Name="Party" ColumnName="Party" />
+                <ScalarProperty Name="POSM" ColumnName="POSM" />
+                <ScalarProperty Name="Other" ColumnName="Other" />
+                <ScalarProperty Name="SchBonus" ColumnName="SchBonus" />
+                <ScalarProperty Name="SchDisplay" ColumnName="SchDisplay" />
+                <ScalarProperty Name="SchListing" ColumnName="SchListing" />
+                <ScalarProperty Name="SchPromo" ColumnName="SchPromo" />
+                <ScalarProperty Name="SchSponsor" ColumnName="SchSponsor" />
+                <ScalarProperty Name="SchParty" ColumnName="SchParty" />
+                <ScalarProperty Name="SchPOSM" ColumnName="SchPOSM" />
+                <ScalarProperty Name="SchOther" ColumnName="SchOther" />
+                <ScalarProperty Name="SchConsF" ColumnName="SchConsF" />
+                <ScalarProperty Name="PM_Bonus" ColumnName="PM_Bonus" />
+                <ScalarProperty Name="PM_Display" ColumnName="PM_Display" />
+                <ScalarProperty Name="PM_Listing" ColumnName="PM_Listing" />
+                <ScalarProperty Name="PM_Promo" ColumnName="PM_Promo" />
+                <ScalarProperty Name="PM_Sponsor" ColumnName="PM_Sponsor" />
+                <ScalarProperty Name="PM_Party" ColumnName="PM_Party" />
+                <ScalarProperty Name="PM_ConsF" ColumnName="PM_ConsF" />
+                <ScalarProperty Name="PM_POSM" ColumnName="PM_POSM" />
+                <ScalarProperty Name="AlcoholPermitObtained" ColumnName="AlcoholPermitObtained" />
+                <ScalarProperty Name="ServiceInvoiceAvailable" ColumnName="ServiceInvoiceAvailable" />
+                <ScalarProperty Name="TaxRegistrationNational" ColumnName="TaxRegistrationNational" />
+                <ScalarProperty Name="TaxRegistrationLocal" ColumnName="TaxRegistrationLocal" />
+                <ScalarProperty Name="BusinessLicense" ColumnName="BusinessLicense" />
+                <ScalarProperty Name="OrganisationCodeCertificate" ColumnName="OrganisationCodeCertificate" />
+                <ScalarProperty Name="IDcard" ColumnName="IDcard" />
+                <ScalarProperty Name="TaxCertificate" ColumnName="TaxCertificate" />
+                <ScalarProperty Name="BankAccountPermission" ColumnName="BankAccountPermission" />
+                <ScalarProperty Name="Outlet" ColumnName="Outlet" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ContractType" ColumnName="ContractType" />
+                <ScalarProperty Name="AssignedTo" ColumnName="AssignedTo" />
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CashPayableOutlet" ColumnName="CashPayableOutlet" />
+                <ScalarProperty Name="ReplacingCompetition" ColumnName="ReplacingCompetition" />
+                <ScalarProperty Name="SchRPB" ColumnName="SchRPB" />
+                <ScalarProperty Name="PM_RPB" ColumnName="PM_RPB" />
+                <ScalarProperty Name="SignatureDate" ColumnName="SignatureDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblContractTypes">
+            <EntityTypeMapping TypeName="OTIS_POCModel.tblContractType">
+              <MappingFragment StoreEntitySet="tblContractType">
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblRegions">
+            <EntityTypeMapping TypeName="OTIS_POCModel.tblRegion">
+              <MappingFragment StoreEntitySet="tblRegion">
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="DescriptionAlt" ColumnName="DescriptionAlt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblUsers">
+            <EntityTypeMapping TypeName="OTIS_POCModel.tblUser">
+              <MappingFragment StoreEntitySet="tblUser">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LoginId" ColumnName="LoginId" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="Admin" ColumnName="Admin" />
+                <ScalarProperty Name="DefaultLang" ColumnName="DefaultLang" />
+                <ScalarProperty Name="LastUseDate" ColumnName="LastUseDate" />
+                <ScalarProperty Name="bReadOnly" ColumnName="bReadOnly" />
+                <ScalarProperty Name="bKRSA" ColumnName="bKRSA" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblWholesalers">
+            <EntityTypeMapping TypeName="OTIS_POCModel.tblWholesaler">
+              <MappingFragment StoreEntitySet="tblWholesaler">
+                <ScalarProperty Name="code" ColumnName="code" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="maxdiscount" ColumnName="maxdiscount" />
+                <ScalarProperty Name="Wholesaler_Ad_agency" ColumnName="Wholesaler/Ad agency" />
+                <ScalarProperty Name="Tier" ColumnName="Tier" />
+                <ScalarProperty Name="Business_address" ColumnName="Business address" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="C2nd_tier_wholesalers_supported" ColumnName="2nd tier wholesalers supported" />
+                <ScalarProperty Name="Outlets_supported" ColumnName="Outlets supported" />
+                <ScalarProperty Name="Primary_contact" ColumnName="Primary contact" />
+                <ScalarProperty Name="Telephone_number" ColumnName="Telephone number" />
+                <ScalarProperty Name="Primary_DCL_contact" ColumnName="Primary DCL contact" />
+                <ScalarProperty Name="CashPool" ColumnName="CashPool" />
+                <ScalarProperty Name="SAPnumber" ColumnName="SAPnumber" />
+                <ScalarProperty Name="ApplyFixedDiscount" ColumnName="ApplyFixedDiscount" />
+                <ScalarProperty Name="WholesalerCode" ColumnName="WholesalerCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Venues">
+            <EntityTypeMapping TypeName="OTIS_POCModel.Venue">
+              <MappingFragment StoreEntitySet="Venues">
+                <ScalarProperty Name="VENUE_CODE" ColumnName="VENUE CODE" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Excel_Number" ColumnName="Excel Number" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="Province" ColumnName="Province" />
+                <ScalarProperty Name="City_Ch" ColumnName="City Ch" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Outlet_Name" ColumnName="Outlet Name" />
+                <ScalarProperty Name="Channel" ColumnName="Channel" />
+                <ScalarProperty Name="CDOS" ColumnName="CDOS" />
+                <ScalarProperty Name="Sub_type" ColumnName="Sub type" />
+                <ScalarProperty Name="Class" ColumnName="Class" />
+                <ScalarProperty Name="Size" ColumnName="Size" />
+                <ScalarProperty Name="Number_of_tables" ColumnName="Number of tables" />
+                <ScalarProperty Name="Number_of_rooms" ColumnName="Number of rooms" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="Owner_s_telephone" ColumnName="Owner's telephone" />
+                <ScalarProperty Name="Contact" ColumnName="Contact" />
+                <ScalarProperty Name="Contact_s_telephone" ColumnName="Contact's telephone" />
+                <ScalarProperty Name="Sales_Man" ColumnName="Sales Man" />
+                <ScalarProperty Name="Distributor" ColumnName="Distributor" />
+                <ScalarProperty Name="Contract_Outlet" ColumnName="Contract Outlet" />
+                <ScalarProperty Name="Part_of_a_chain" ColumnName="Part of a chain" />
+                <ScalarProperty Name="GroupCode" ColumnName="GroupCode" />
+                <ScalarProperty Name="Multi_venue" ColumnName="Multi-venue" />
+                <ScalarProperty Name="BottlesOfSales" ColumnName="BottlesOfSales" />
+                <ScalarProperty Name="Business_license_address" ColumnName="Business license address" />
+                <ScalarProperty Name="C2ndDistributor" ColumnName="2ndDistributor" />
+                <ScalarProperty Name="LegalName" ColumnName="LegalName" />
+                <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
