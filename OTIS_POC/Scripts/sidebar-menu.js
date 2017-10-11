@@ -2,6 +2,15 @@ $.sidebarMenu = function(menu) {
   var animationSpeed = 300,
     subMenuSelector = '.sidebar-submenu';
 
+  //$(menu).on('click', 'li a', function (e) {
+  //    var element = document.getElementById("direction");
+  //    element.toggleClass("fa-angle-right fa-angle-down");
+  //});
+
+  $(menu).on('click','li a', function (e) {
+      $(this).find('[class*="angle"]').toggleClass('fa-angle-right fa-angle-down')
+  });
+
   $(menu).on('click', 'li a', function(e) {
     var $this = $(this);
     var checkElement = $this.next();

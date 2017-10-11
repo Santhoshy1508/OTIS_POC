@@ -18,7 +18,8 @@ namespace OTIS_POC
 
             bundles.Add(new ScriptBundle("~/bundles/3rdpartyjs").Include(
                         "~/Scripts/sidebar-menu.js",
-                        "~/Scripts/custom.js"));
+                        "~/Scripts/custom.js",
+                        "~/Scripts/Chart.bundle.min.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -40,7 +41,12 @@ namespace OTIS_POC
             bundles.Add(new StyleBundle("~/Content/fontawesome",
                 "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"));
 
-           
+            bundles.Add(new StyleBundle("~/Content/fonts",
+                "https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro"));
+        
+
+
+
         }
     }
 }

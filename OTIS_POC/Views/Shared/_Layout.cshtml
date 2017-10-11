@@ -7,100 +7,124 @@
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/fontawesome")
     @Styles.Render("~/Content/3rdpartycss")
+    @Styles.Render("~/Content/fonts")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
     <div class="body-home">
 
-        <div class="row body-wrapper">
+        <div class="body-wrapper">
 
-            <div class="col-md-3 sidebar-wrapper">
+            <div>
 
-                <section class="sidebar-vertical" style="width: 200px">
-                    <ul class="sidebar-menu">
-                        <li class="sidebar-header">OTIS China</li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-home"></i> <span>Home</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-pencil-square-o"></i> <span>Contracts</span> <i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="sidebar-submenu">
-                                <li><a href="#"><i class="fa fa-file-o"></i> New</a></li>
-                                <li><a href="#"><i class="fa fa-search"></i> Search</a></li>
-                                <li><a href="#"><i class="fa fa-check-square-o"></i> My Contracts</a></li>
-                                <li><a href="#"><i class="fa fa-pencil"></i> Amend</a></li>
-                                <li><a href="#"><i class="fa fa-wrench"></i> Change Status</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-gavel"></i> <span>Approvals</span></i>
-                                <span class="label label-primary pull-right">5</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-pie-chart"></i> <span>Evaluation</span></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-money"></i> <span>Payments</span> <i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="sidebar-submenu">
-                                <li><a href="#"><i class="fa fa-file-o"></i> New</a></li>
-                                <li><a href="#"><i class="fa fa-search"></i> Search</a></li>
-                                <li><a href="#"><i class="fa fa-check-square-o"></i> Approve</a></li>
-                                <li><a href="#"><i class="fa fa-balance-scale"></i> Balance</a></li>
-                                <li><a href="#"><i class="fa fa-credit-card"></i> My Payments</a></li>
-                                <li><a href="#"><i class="fa fa-shopping-bag"></i> Orders</a></li>
-                                <li><a href="#"><i class="fa fa-shopping-basket"></i> My Orders</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-database"></i>
-                                <span>Master Data</span><i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="sidebar-submenu" style="display: none;">
-                                <li><a href="#"><i class="fa fa-users"></i> Users</a></li>
-                                <li><a href="#"><i class="fa fa-map-marker"></i> Venues</a></li>
-                                <li><a href="#"><i class="fa fa-address-card"></i> Wholesalers</a></li>
-                                <li><a href="#"><i class="fa fa-beer"></i> Brands</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-keyboard-o"></i>
-                                <span>Monthly Input</span><i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="sidebar-submenu" style="display: none;">
-                                <li><a href="#"><i class="fa fa-square"></i> SAP</a></li>
-                                <li><a href="#"><i class="fa fa-stack-overflow"></i> Stock Movement</a></li>
-                            </ul>
-                        </li>
-                       
-                    </ul>
-                </section>
+                <div class="sidebar-wrapper">
+
+                    <section class="sidebar-vertical" style="width: 200px">
+                        <ul class="sidebar-menu">
+                            <li class="sidebar-header">OTIS CHINA</li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-home"></i> <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pencil-square-o"></i> <span>Contracts</span> <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                                <ul class="sidebar-submenu">
+                                    <li><a href="#"><i class="fa fa-file-o"></i> New</a></li>
+                                    <li><a href="#"><i class="fa fa-search"></i> Search</a></li>
+                                    <li><a href="#"><i class="fa fa-check-square-o"></i> My Contracts</a></li>
+                                    <li><a href="#"><i class="fa fa-pencil"></i> Amend</a></li>
+                                    <li><a href="#"><i class="fa fa-wrench"></i> Change Status</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-gavel"></i> <span>Approvals</span></i>
+                                    <span class="label label-primary pull-right">5</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pie-chart"></i> <span>Evaluation</span></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-money"></i> <span>Payments</span> <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                                <ul class="sidebar-submenu">
+                                    <li><a href="#"><i class="fa fa-file-o"></i> New</a></li>
+                                    <li><a href="#"><i class="fa fa-search"></i> Search</a></li>
+                                    <li><a href="#"><i class="fa fa-check-square-o"></i> Approve</a></li>
+                                    <li><a href="#"><i class="fa fa-balance-scale"></i> Balance</a></li>
+                                    <li><a href="#"><i class="fa fa-credit-card"></i> My Payments</a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Orders</a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-basket"></i> My Orders</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-database"></i>
+                                    <span>Master Data</span><i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                                <ul class="sidebar-submenu" style="display: none;">
+                                    <li><a href="#"><i class="fa fa-users"></i> Users</a></li>
+                                    <li><a href="#"><i class="fa fa-map-marker"></i> Venues</a></li>
+                                    <li><a href="#"><i class="fa fa-archive"></i> Wholesalers</a></li>
+                                    <li><a href="#"><i class="fa fa-beer"></i> Brands</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-keyboard-o"></i>
+                                    <span>Monthly Input</span><i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                                <ul class="sidebar-submenu" style="display: none;">
+                                    <li><a href="#"><i class="fa fa-square"></i> SAP</a></li>
+                                    <li><a href="#"><i class="fa fa-stack-overflow"></i> Stock Movement</a></li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </section>
+
+                </div>
+                               
 
             </div>
 
-            <div class="col-md-9 content-wrapper">
+            <div>
 
-                <div class="body-content-wrapper">
+                <div class="content-wrapper">
 
-                    <div class="container body-content">
+                    <div class="navbar navbar-default navbar-fixed-top">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#">
+                                    <img id="logo" src="~/Content/Images/diageo-logo.png" alt="Diageo" />
+                                </a>
+                            </div>
+                            <ul class="nav navbar-nav">
 
-                        @RenderBody()
-                        <hr />
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="body-content-wrapper">
+
+                        <div class="container body-content">
+
+                            @RenderBody()
+                            <hr />
+                        </div>
+
                     </div>
 
                 </div>
-
+            
             </div>
 
         </div>
@@ -111,8 +135,7 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
     <script>
-        $.sidebarMenu($('.sidebar-menu'))
-        $.sidebarMenu($('.sidebar-menu-rtl'))
+        
     </script>
 </body>
 </html>

@@ -1,6 +1,9 @@
 ﻿body {
-   /* padding-top: 50px;*/
-    padding-bottom: 20px;
+   /* padding-top: 50px;
+    padding-bottom: 20px;*/
+   font-family: 'Raleway',sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -25,7 +28,7 @@ textarea {
 
 .body-home{
     position:relative;
-    background-color:#222d32;
+    background-color:#fff;
     /*background-image: url("~/Content/Images/diageo-home-bg.jpg");*/
 }
 
@@ -33,9 +36,55 @@ textarea {
 .sidebar-wrapper{
     position:absolute;
     background-color:#222d32;
-    height: 100%;
+    width: 200px;
+    height: 100vh;   
+    margin-top:-60px;
+
 }
+
+.sidebar-vertical{
+    position:fixed;
+}
+
 .body-content-wrapper{
-    position:absolute !important;
+   /* position:absolute !important;*/
     margin-left:200px !important;
+    margin-top:60px !important;
+}
+
+.content-wrapper{
+    /*background-image: url("Images/logo4.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    
+    background-size: cover;
+    background-color:#e9ecf3;
+        background-size: 450px 150px !important;
+    */
+    width: 100vw;
+    height: 100vh;
+  }
+
+.navbar-fixed-top{
+    left:200px !important;
+    height:30px !important;
+    background-color: #FCFFFD !important;
+}
+
+#logo{
+    height:30px;
+    padding-bottom:5px;
+}
+
+/*----------Page headers-----------*/
+
+.page-header-title h3 {
+    font-size:20px;
+    font-weight:300;
+    color:#222d32;
+}
+
+.chart{
+    border: 1px solid #b8c7ce;
+    border-radius: 3px;
 }
