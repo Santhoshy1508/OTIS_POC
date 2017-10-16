@@ -3,12 +3,11 @@
     padding-bottom: 20px;*/
    font-family: 'Raleway',sans-serif;
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
+    padding-left: 25px;
     padding-right: 15px;
 }
 
@@ -35,10 +34,9 @@ textarea {
 
 .sidebar-wrapper{
     position:absolute;
-    background-color:#222d32;
-    width: 200px;
-    height: 100vh;   
-    margin-top:-60px;
+    /*background-color:#222d32;*/
+    /*width: 30%;*/
+    height: 100%;   
 
 }
 
@@ -47,9 +45,15 @@ textarea {
 }
 
 .body-content-wrapper{
-   /* position:absolute !important;*/
-    margin-left:200px !important;
-    margin-top:60px !important;
+   position:fixed;/*absolute !important;*/
+   overflow-y: scroll;
+   height:100%;
+   margin-top:60px !important;
+   width:85%;
+}
+
+hr{
+    margin-top:50px !important;
 }
 
 .content-wrapper{
@@ -61,8 +65,9 @@ textarea {
     background-color:#e9ecf3;
         background-size: 450px 150px !important;
     */
-    width: 100vw;
-    height: 100vh;
+    width: 70%;
+    height: 100%;
+        margin-left:200px !important;
   }
 
 .navbar-fixed-top{
@@ -74,8 +79,12 @@ textarea {
 #logo{
     height:30px;
     padding-bottom:5px;
+    margin-left:20px;
 }
 
+h3{
+    margin-top:5px !important;
+}
 /*----------Page headers-----------*/
 
 .page-header-title h3 {
@@ -87,4 +96,12 @@ textarea {
 .chart{
     border: 1px solid #b8c7ce;
     border-radius: 3px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:10px;
+    margin-right:10px;
+    width:500px;
+    height:250px;
+    padding-top:10px;
+    padding-bottom:10px;
 }
