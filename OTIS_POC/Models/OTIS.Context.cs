@@ -34,5 +34,6 @@ namespace OTIS_POC.Models
         public virtual DbSet<tblUser> tblUsers { get; set; }
         public virtual DbSet<tblWholesaler> tblWholesalers { get; set; }
         public virtual DbSet<Venue> Venues { get; set; }
+        public virtual DbSet<Vw_Users> Vw_Users { get; set; }
     }
 }

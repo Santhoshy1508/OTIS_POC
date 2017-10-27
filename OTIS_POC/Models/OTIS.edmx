@@ -4,235 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="OTIS_POCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'OTIS_POC.dbo.brand' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="brand">
-          <Property Name="Parent Brand" Type="nvarchar" MaxLength="255" />
-          <Property Name="Brand" Type="nvarchar" MaxLength="255" />
-          <Property Name="Brand description" Type="nvarchar" MaxLength="255" />
-          <Property Name="Brand Chinese Descrption" Type="nvarchar" MaxLength="255" />
-          <Property Name="Bottle size" Type="float" />
-          <Property Name="Pack Size" Type="float" />
-          <Property Name="Bott / 9L case" Type="float" />
-          <Property Name="NSV before FTT / 9L case" Type="float" />
-          <Property Name="COGS/CASE" Type="float" />
-          <Property Name="GP before FTT/CASE" Type="float" />
-          <Property Name="FG cost to Diageo/9L case" Type="float" />
-          <Property Name="Unit Cost" Type="float" />
-          <Property Name="Product number" Type="nvarchar" MaxLength="255" />
-          <Property Name="Key Brand" Type="nvarchar" MaxLength="255" />
-          <Property Name="Contract brand" Type="nvarchar" MaxLength="255" />
-          <Property Name="Order form brand" Type="nvarchar" MaxLength="255" />
-          <Property Name="F17" Type="nvarchar" MaxLength="255" />
-          <Property Name="F18" Type="nvarchar" MaxLength="255" />
-          <Property Name="F19" Type="nvarchar" MaxLength="255" />
-          <Property Name="F20" Type="nvarchar" MaxLength="255" />
-          <Property Name="F21" Type="nvarchar" MaxLength="255" />
-          <Property Name="F22" Type="nvarchar" MaxLength="255" />
-          <Property Name="F23" Type="nvarchar" MaxLength="255" />
-          <Property Name="F24" Type="nvarchar" MaxLength="255" />
-          <Property Name="F25" Type="nvarchar" MaxLength="255" />
-          <Property Name="F26" Type="nvarchar" MaxLength="255" />
-          <Property Name="F27" Type="nvarchar" MaxLength="255" />
-          <Property Name="F28" Type="nvarchar" MaxLength="255" />
-          <Property Name="F29" Type="nvarchar" MaxLength="255" />
-          <Property Name="F30" Type="nvarchar" MaxLength="255" />
-          <Property Name="F31" Type="nvarchar" MaxLength="255" />
-          <Property Name="F32" Type="nvarchar" MaxLength="255" />
-          <Property Name="F33" Type="nvarchar" MaxLength="255" />
-          <Property Name="F34" Type="nvarchar" MaxLength="255" />
-          <Property Name="F35" Type="nvarchar" MaxLength="255" />
-          <Property Name="F36" Type="nvarchar" MaxLength="255" />
-          <Property Name="F37" Type="nvarchar" MaxLength="255" />
-          <Property Name="F38" Type="nvarchar" MaxLength="255" />
-          <Property Name="F39" Type="nvarchar" MaxLength="255" />
-          <Property Name="F40" Type="nvarchar" MaxLength="255" />
-          <Property Name="F41" Type="nvarchar" MaxLength="255" />
-          <Property Name="F42" Type="nvarchar" MaxLength="255" />
-          <Property Name="F43" Type="nvarchar" MaxLength="255" />
-          <Property Name="F44" Type="nvarchar" MaxLength="255" />
-          <Property Name="F45" Type="nvarchar" MaxLength="255" />
-          <Property Name="F46" Type="nvarchar" MaxLength="255" />
-          <Property Name="F47" Type="nvarchar" MaxLength="255" />
-          <Property Name="F48" Type="nvarchar" MaxLength="255" />
-          <Property Name="F49" Type="nvarchar" MaxLength="255" />
-          <Property Name="F50" Type="nvarchar" MaxLength="255" />
-          <Property Name="F51" Type="nvarchar" MaxLength="255" />
-          <Property Name="F52" Type="nvarchar" MaxLength="255" />
-          <Property Name="F53" Type="nvarchar" MaxLength="255" />
-          <Property Name="F54" Type="nvarchar" MaxLength="255" />
-          <Property Name="F55" Type="nvarchar" MaxLength="255" />
-          <Property Name="F56" Type="nvarchar" MaxLength="255" />
-          <Property Name="F57" Type="nvarchar" MaxLength="255" />
-          <Property Name="F58" Type="nvarchar" MaxLength="255" />
-          <Property Name="F59" Type="nvarchar" MaxLength="255" />
-          <Property Name="F60" Type="nvarchar" MaxLength="255" />
-          <Property Name="F61" Type="nvarchar" MaxLength="255" />
-          <Property Name="F62" Type="nvarchar" MaxLength="255" />
-          <Property Name="F63" Type="nvarchar" MaxLength="255" />
-          <Property Name="F64" Type="nvarchar" MaxLength="255" />
-          <Property Name="F65" Type="nvarchar" MaxLength="255" />
-          <Property Name="F66" Type="nvarchar" MaxLength="255" />
-          <Property Name="F67" Type="nvarchar" MaxLength="255" />
-          <Property Name="F68" Type="nvarchar" MaxLength="255" />
-          <Property Name="F69" Type="nvarchar" MaxLength="255" />
-          <Property Name="F70" Type="nvarchar" MaxLength="255" />
-          <Property Name="F71" Type="nvarchar" MaxLength="255" />
-          <Property Name="F72" Type="nvarchar" MaxLength="255" />
-          <Property Name="F73" Type="nvarchar" MaxLength="255" />
-          <Property Name="F74" Type="nvarchar" MaxLength="255" />
-          <Property Name="F75" Type="nvarchar" MaxLength="255" />
-          <Property Name="F76" Type="nvarchar" MaxLength="255" />
-          <Property Name="F77" Type="nvarchar" MaxLength="255" />
-          <Property Name="F78" Type="nvarchar" MaxLength="255" />
-          <Property Name="F79" Type="nvarchar" MaxLength="255" />
-          <Property Name="F80" Type="nvarchar" MaxLength="255" />
-          <Property Name="F81" Type="nvarchar" MaxLength="255" />
-          <Property Name="F82" Type="nvarchar" MaxLength="255" />
-          <Property Name="F83" Type="nvarchar" MaxLength="255" />
-          <Property Name="F84" Type="nvarchar" MaxLength="255" />
-          <Property Name="F85" Type="nvarchar" MaxLength="255" />
-          <Property Name="F86" Type="nvarchar" MaxLength="255" />
-          <Property Name="F87" Type="nvarchar" MaxLength="255" />
-          <Property Name="F88" Type="nvarchar" MaxLength="255" />
-          <Property Name="F89" Type="nvarchar" MaxLength="255" />
-          <Property Name="F90" Type="nvarchar" MaxLength="255" />
-          <Property Name="F91" Type="nvarchar" MaxLength="255" />
-          <Property Name="F92" Type="nvarchar" MaxLength="255" />
-          <Property Name="F93" Type="nvarchar" MaxLength="255" />
-          <Property Name="F94" Type="nvarchar" MaxLength="255" />
-          <Property Name="F95" Type="nvarchar" MaxLength="255" />
-          <Property Name="F96" Type="nvarchar" MaxLength="255" />
-          <Property Name="F97" Type="nvarchar" MaxLength="255" />
-          <Property Name="F98" Type="nvarchar" MaxLength="255" />
-          <Property Name="F99" Type="nvarchar" MaxLength="255" />
-          <Property Name="F100" Type="nvarchar" MaxLength="255" />
-          <Property Name="F101" Type="nvarchar" MaxLength="255" />
-          <Property Name="F102" Type="nvarchar" MaxLength="255" />
-          <Property Name="F103" Type="nvarchar" MaxLength="255" />
-          <Property Name="F104" Type="nvarchar" MaxLength="255" />
-          <Property Name="F105" Type="nvarchar" MaxLength="255" />
-          <Property Name="F106" Type="nvarchar" MaxLength="255" />
-          <Property Name="F107" Type="nvarchar" MaxLength="255" />
-          <Property Name="F108" Type="nvarchar" MaxLength="255" />
-          <Property Name="F109" Type="nvarchar" MaxLength="255" />
-          <Property Name="F110" Type="nvarchar" MaxLength="255" />
-          <Property Name="F111" Type="nvarchar" MaxLength="255" />
-          <Property Name="F112" Type="nvarchar" MaxLength="255" />
-          <Property Name="F113" Type="nvarchar" MaxLength="255" />
-          <Property Name="F114" Type="nvarchar" MaxLength="255" />
-          <Property Name="F115" Type="nvarchar" MaxLength="255" />
-          <Property Name="F116" Type="nvarchar" MaxLength="255" />
-          <Property Name="F117" Type="nvarchar" MaxLength="255" />
-          <Property Name="F118" Type="nvarchar" MaxLength="255" />
-          <Property Name="F119" Type="nvarchar" MaxLength="255" />
-          <Property Name="F120" Type="nvarchar" MaxLength="255" />
-          <Property Name="F121" Type="nvarchar" MaxLength="255" />
-          <Property Name="F122" Type="nvarchar" MaxLength="255" />
-          <Property Name="F123" Type="nvarchar" MaxLength="255" />
-          <Property Name="F124" Type="nvarchar" MaxLength="255" />
-          <Property Name="F125" Type="nvarchar" MaxLength="255" />
-          <Property Name="F126" Type="nvarchar" MaxLength="255" />
-          <Property Name="F127" Type="nvarchar" MaxLength="255" />
-          <Property Name="F128" Type="nvarchar" MaxLength="255" />
-          <Property Name="F129" Type="nvarchar" MaxLength="255" />
-          <Property Name="F130" Type="nvarchar" MaxLength="255" />
-          <Property Name="F131" Type="nvarchar" MaxLength="255" />
-          <Property Name="F132" Type="nvarchar" MaxLength="255" />
-          <Property Name="F133" Type="nvarchar" MaxLength="255" />
-          <Property Name="F134" Type="nvarchar" MaxLength="255" />
-          <Property Name="F135" Type="nvarchar" MaxLength="255" />
-          <Property Name="F136" Type="nvarchar" MaxLength="255" />
-          <Property Name="F137" Type="nvarchar" MaxLength="255" />
-          <Property Name="F138" Type="nvarchar" MaxLength="255" />
-          <Property Name="F139" Type="nvarchar" MaxLength="255" />
-          <Property Name="F140" Type="nvarchar" MaxLength="255" />
-          <Property Name="F141" Type="nvarchar" MaxLength="255" />
-          <Property Name="F142" Type="nvarchar" MaxLength="255" />
-          <Property Name="F143" Type="nvarchar" MaxLength="255" />
-          <Property Name="F144" Type="nvarchar" MaxLength="255" />
-          <Property Name="F145" Type="nvarchar" MaxLength="255" />
-          <Property Name="F146" Type="nvarchar" MaxLength="255" />
-          <Property Name="F147" Type="nvarchar" MaxLength="255" />
-          <Property Name="F148" Type="nvarchar" MaxLength="255" />
-          <Property Name="F149" Type="nvarchar" MaxLength="255" />
-          <Property Name="F150" Type="nvarchar" MaxLength="255" />
-          <Property Name="F151" Type="nvarchar" MaxLength="255" />
-          <Property Name="F152" Type="nvarchar" MaxLength="255" />
-          <Property Name="F153" Type="nvarchar" MaxLength="255" />
-          <Property Name="F154" Type="nvarchar" MaxLength="255" />
-          <Property Name="F155" Type="nvarchar" MaxLength="255" />
-          <Property Name="F156" Type="nvarchar" MaxLength="255" />
-          <Property Name="F157" Type="nvarchar" MaxLength="255" />
-          <Property Name="F158" Type="nvarchar" MaxLength="255" />
-          <Property Name="F159" Type="nvarchar" MaxLength="255" />
-          <Property Name="F160" Type="nvarchar" MaxLength="255" />
-          <Property Name="F161" Type="nvarchar" MaxLength="255" />
-          <Property Name="F162" Type="nvarchar" MaxLength="255" />
-          <Property Name="F163" Type="nvarchar" MaxLength="255" />
-          <Property Name="F164" Type="nvarchar" MaxLength="255" />
-          <Property Name="F165" Type="nvarchar" MaxLength="255" />
-          <Property Name="F166" Type="nvarchar" MaxLength="255" />
-          <Property Name="F167" Type="nvarchar" MaxLength="255" />
-          <Property Name="F168" Type="nvarchar" MaxLength="255" />
-          <Property Name="F169" Type="nvarchar" MaxLength="255" />
-          <Property Name="F170" Type="nvarchar" MaxLength="255" />
-          <Property Name="F171" Type="nvarchar" MaxLength="255" />
-          <Property Name="F172" Type="nvarchar" MaxLength="255" />
-          <Property Name="F173" Type="nvarchar" MaxLength="255" />
-          <Property Name="F174" Type="nvarchar" MaxLength="255" />
-          <Property Name="F175" Type="nvarchar" MaxLength="255" />
-          <Property Name="F176" Type="nvarchar" MaxLength="255" />
-          <Property Name="F177" Type="nvarchar" MaxLength="255" />
-          <Property Name="F178" Type="nvarchar" MaxLength="255" />
-          <Property Name="F179" Type="nvarchar" MaxLength="255" />
-          <Property Name="F180" Type="nvarchar" MaxLength="255" />
-          <Property Name="F181" Type="nvarchar" MaxLength="255" />
-          <Property Name="F182" Type="nvarchar" MaxLength="255" />
-          <Property Name="F183" Type="nvarchar" MaxLength="255" />
-          <Property Name="F184" Type="nvarchar" MaxLength="255" />
-          <Property Name="F185" Type="nvarchar" MaxLength="255" />
-          <Property Name="F186" Type="nvarchar" MaxLength="255" />
-          <Property Name="F187" Type="nvarchar" MaxLength="255" />
-          <Property Name="F188" Type="nvarchar" MaxLength="255" />
-          <Property Name="F189" Type="nvarchar" MaxLength="255" />
-          <Property Name="F190" Type="nvarchar" MaxLength="255" />
-          <Property Name="F191" Type="nvarchar" MaxLength="255" />
-          <Property Name="F192" Type="nvarchar" MaxLength="255" />
-          <Property Name="F193" Type="nvarchar" MaxLength="255" />
-          <Property Name="F194" Type="nvarchar" MaxLength="255" />
-          <Property Name="F195" Type="nvarchar" MaxLength="255" />
-          <Property Name="F196" Type="nvarchar" MaxLength="255" />
-          <Property Name="F197" Type="nvarchar" MaxLength="255" />
-          <Property Name="F198" Type="nvarchar" MaxLength="255" />
-          <Property Name="F199" Type="nvarchar" MaxLength="255" />
-          <Property Name="F200" Type="nvarchar" MaxLength="255" />
-          <Property Name="F201" Type="nvarchar" MaxLength="255" />
-          <Property Name="F202" Type="nvarchar" MaxLength="255" />
-          <Property Name="F203" Type="nvarchar" MaxLength="255" />
-          <Property Name="F204" Type="nvarchar" MaxLength="255" />
-          <Property Name="F205" Type="nvarchar" MaxLength="255" />
-          <Property Name="F206" Type="nvarchar" MaxLength="255" />
-          <Property Name="F207" Type="nvarchar" MaxLength="255" />
-          <Property Name="F208" Type="nvarchar" MaxLength="255" />
-          <Property Name="F209" Type="nvarchar" MaxLength="255" />
-          <Property Name="F210" Type="nvarchar" MaxLength="255" />
-          <Property Name="F211" Type="nvarchar" MaxLength="255" />
-          <Property Name="F212" Type="nvarchar" MaxLength="255" />
-          <Property Name="F213" Type="nvarchar" MaxLength="255" />
-          <Property Name="F214" Type="nvarchar" MaxLength="255" />
-          <Property Name="F215" Type="nvarchar" MaxLength="255" />
-          <Property Name="F216" Type="nvarchar" MaxLength="255" />
-          <Property Name="F217" Type="nvarchar" MaxLength="255" />
-          <Property Name="F218" Type="nvarchar" MaxLength="255" />
-          <Property Name="F219" Type="nvarchar" MaxLength="255" />
-          <Property Name="F220" Type="nvarchar" MaxLength="255" />
-          <Property Name="F221" Type="nvarchar" MaxLength="255" />
-          <Property Name="F222" Type="nvarchar" MaxLength="255" />
-          <Property Name="F223" Type="nvarchar" MaxLength="255" />
-          <Property Name="GP/case after FTT-on" Type="nvarchar" MaxLength="255" />
-        </EntityType>-->
+    <Schema Namespace="OTIS_POCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Financials by Brand">
           <Key>
             <PropertyRef Name="Brand" />
@@ -362,59 +134,6 @@ warning 6013: The table/view 'OTIS_POC.dbo.brand' does not have a primary key de
           <Property Name="PM_RPB" Type="char" MaxLength="2" />
           <Property Name="SignatureDate" Type="smalldatetime" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'OTIS_POC.dbo.tblContractData' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="tblContractData">
-          <Property Name="Data Code" Type="nvarchar" MaxLength="255" />
-          <Property Name="Contract Code" Type="nvarchar" MaxLength="50" />
-          <Property Name="Investment Type" Type="nvarchar" MaxLength="10" />
-          <Property Name="Brand" Type="nvarchar" MaxLength="50" />
-          <Property Name="Bottle Target Volume" Type="float" />
-          <Property Name="cRPB" Type="float" />
-          <Property Name="Vol related" Type="float" />
-          <Property Name="Overachieve RPB" Type="float" />
-          <Property Name="non vol related" Type="float" />
-          <Property Name="Pure FTT non vol" Type="float" />
-          <Property Name="RRPB" Type="float" />
-          <Property Name="RRPBftt" Type="float" />
-          <Property Name="Bonus" Type="float" />
-          <Property Name="ConsF" Type="float" />
-          <Property Name="Display" Type="float" />
-          <Property Name="Listing" Type="float" />
-          <Property Name="Promo" Type="float" />
-          <Property Name="Sponsor" Type="float" />
-          <Property Name="Party" Type="float" />
-          <Property Name="POSM" Type="float" />
-          <Property Name="Other" Type="float" />
-          <Property Name="Case Volume" Type="float" />
-          <Property Name="NSV" Type="float" />
-          <Property Name="GP" Type="float" />
-          <Property Name="FTT" Type="float" />
-          <Property Name="CAAP pre A&amp;P" Type="float" />
-          <Property Name="A&amp;P" Type="float" />
-          <Property Name="Investment" Type="float" />
-          <Property Name="CAAP" Type="float" />
-          <Property Name="CAAP/case" Type="float" />
-          <Property Name="Vol data source" Type="nvarchar" MaxLength="50" />
-          <Property Name="FTT split source" Type="nvarchar" MaxLength="50" />
-          <Property Name="TradeMarketing" Type="float" />
-          <Property Name="MonthlyVolume" Type="float" />
-          <Property Name="PartyCost" Type="decimal" Precision="18" Scale="2" />
-          <Property Name="POSMCost" Type="decimal" Precision="18" Scale="2" />
-          <Property Name="SWAP" Type="bit" />
-          <Property Name="80/100" Type="bit" />
-          <Property Name="TargetCollection" Type="decimal" Precision="18" Scale="2" />
-        </EntityType>-->
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'OTIS_POC.dbo.tblContractNotes' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="tblContractNotes">
-          <Property Name="Contract Code" Type="nvarchar" MaxLength="255" />
-          <Property Name="Reason" Type="ntext" />
-          <Property Name="CompetitionDoing" Type="ntext" />
-          <Property Name="Notes" Type="ntext" />
-          <Property Name="Competition" Type="nvarchar" MaxLength="255" />
-          <Property Name="CompetitionBrand" Type="nvarchar" MaxLength="255" />
-        </EntityType>-->
         <EntityType Name="tblContractType">
           <Key>
             <PropertyRef Name="Code" />
@@ -422,13 +141,6 @@ warning 6013: The table/view 'OTIS_POC.dbo.tblContractNotes' does not have a pri
           <Property Name="Code" Type="char" MaxLength="10" Nullable="false" />
           <Property Name="Description" Type="nvarchar" MaxLength="50" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'OTIS_POC.dbo.tblLanguage' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="tblLanguage">
-          <Property Name="Code" Type="int" />
-          <Property Name="Description" Type="nvarchar" MaxLength="50" />
-          <Property Name="DescriptionAlt" Type="nvarchar" MaxLength="50" />
-        </EntityType>-->
         <EntityType Name="tblRegion">
           <Key>
             <PropertyRef Name="Region" />
@@ -441,7 +153,7 @@ warning 6013: The table/view 'OTIS_POC.dbo.tblLanguage' does not have a primary 
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="LoginId" Type="nvarchar" MaxLength="100" />
+          <Property Name="LoginId" Type="nvarchar" MaxLength="255" />
           <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Email" Type="nvarchar" MaxLength="100" />
@@ -512,6 +224,28 @@ warning 6013: The table/view 'OTIS_POC.dbo.tblLanguage' does not have a primary 
           <Property Name="LegalName" Type="nvarchar" MaxLength="255" />
           <Property Name="StoreName" Type="nvarchar" MaxLength="255" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'OTIS_POC.dbo.Vw_Users' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Vw_Users">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="FirstName" />
+            <PropertyRef Name="LastName" />
+            <PropertyRef Name="Admin" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="LoginId" Type="nvarchar" MaxLength="255" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="Region" Type="nvarchar" MaxLength="255" />
+          <Property Name="Admin" Type="int" Nullable="false" />
+          <Property Name="DefaultLang" Type="int" />
+          <Property Name="LastUseDate" Type="nvarchar" MaxLength="50" />
+          <Property Name="bReadOnly" Type="bit" />
+          <Property Name="ApproveType" Type="nvarchar" MaxLength="50" />
+          <Property Name="Role" Type="int" />
+        </EntityType>
         <Association Name="FK_tblApprovers_tblApprovers">
           <End Role="tblApprovers" Type="Self.tblApprovers" Multiplicity="1" />
           <End Role="tblApprovers1" Type="Self.tblApprovers" Multiplicity="0..1" />
@@ -534,13 +268,28 @@ warning 6013: The table/view 'OTIS_POC.dbo.tblLanguage' does not have a primary 
           <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblWholesaler" EntityType="Self.tblWholesaler" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Venues" EntityType="Self.Venues" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Vw_Users" EntityType="Self.Vw_Users" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Vw_Users].[ID] AS [ID], 
+    [Vw_Users].[LoginId] AS [LoginId], 
+    [Vw_Users].[FirstName] AS [FirstName], 
+    [Vw_Users].[LastName] AS [LastName], 
+    [Vw_Users].[Email] AS [Email], 
+    [Vw_Users].[Region] AS [Region], 
+    [Vw_Users].[Admin] AS [Admin], 
+    [Vw_Users].[DefaultLang] AS [DefaultLang], 
+    [Vw_Users].[LastUseDate] AS [LastUseDate], 
+    [Vw_Users].[bReadOnly] AS [bReadOnly], 
+    [Vw_Users].[ApproveType] AS [ApproveType], 
+    [Vw_Users].[Role] AS [Role]
+    FROM [dbo].[Vw_Users] AS [Vw_Users]</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="FK_tblApprovers_tblApprovers" Association="Self.FK_tblApprovers_tblApprovers">
             <End Role="tblApprovers" EntitySet="tblApprovers" />
             <End Role="tblApprovers1" EntitySet="tblApprovers" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="OTIS_POCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -694,7 +443,7 @@ warning 6013: The table/view 'OTIS_POC.dbo.tblLanguage' does not have a primary 
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="LoginId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="LoginId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
@@ -791,7 +540,28 @@ warning 6013: The table/view 'OTIS_POC.dbo.tblLanguage' does not have a primary 
             <End Role="tblApprovers" EntitySet="tblApprovers" />
             <End Role="tblApprovers1" EntitySet="tblApprovers" />
           </AssociationSet>
+          <EntitySet Name="Vw_Users" EntityType="OTIS_POCModel.Vw_Users" />
         </EntityContainer>
+        <EntityType Name="Vw_Users">
+          <Key>
+            <PropertyRef Name="ID" />
+            <PropertyRef Name="FirstName" />
+            <PropertyRef Name="LastName" />
+            <PropertyRef Name="Admin" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="LoginId" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Region" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Admin" Type="Int32" Nullable="false" />
+          <Property Name="DefaultLang" Type="Int32" />
+          <Property Name="LastUseDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="bReadOnly" Type="Boolean" />
+          <Property Name="ApproveType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Role" Type="Int32" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1023,6 +793,24 @@ warning 6013: The table/view 'OTIS_POC.dbo.tblLanguage' does not have a primary 
                 <ScalarProperty Name="C2ndDistributor" ColumnName="2ndDistributor" />
                 <ScalarProperty Name="LegalName" ColumnName="LegalName" />
                 <ScalarProperty Name="StoreName" ColumnName="StoreName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Vw_Users">
+            <EntityTypeMapping TypeName="OTIS_POCModel.Vw_Users">
+              <MappingFragment StoreEntitySet="Vw_Users">
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="ApproveType" ColumnName="ApproveType" />
+                <ScalarProperty Name="bReadOnly" ColumnName="bReadOnly" />
+                <ScalarProperty Name="LastUseDate" ColumnName="LastUseDate" />
+                <ScalarProperty Name="DefaultLang" ColumnName="DefaultLang" />
+                <ScalarProperty Name="Admin" ColumnName="Admin" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LoginId" ColumnName="LoginId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

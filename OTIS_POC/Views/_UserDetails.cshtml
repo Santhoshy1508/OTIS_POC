@@ -1,0 +1,26 @@
+﻿@model OTIS_POC.Models.Vw_Users
+
+<ul class="nav navbar-nav pull-right">
+    <li class="user-details">
+        <span class="username-role">
+            <i class="fa fa-user"></i>
+            <span class="username">@Model.FirstName @Model.LastName </span>
+            @*@Html.DisplayFor(m => m.FirstName)*@
+            <span>( Role:</span>
+            <span class="role">@Model.ApproveType</span>
+            <span>)</span>
+        </span>
+        <p style="font-size:12px; color:#3d3d3d">
+            <i class="fa fa-tv"></i>
+            <span class="user-guww">@User.Identity.Name</span>
+            <span class="dropdown">
+                <i class="fa fa-language"></i>
+                Change Language
+                <span class="dropdown-content">
+                    <a href="#">Chinese</a>
+                </span>
+            </span>
+            @*<span class="change-lang">Change Language</span>*@
+        </p>
+    </li>
+</ul>

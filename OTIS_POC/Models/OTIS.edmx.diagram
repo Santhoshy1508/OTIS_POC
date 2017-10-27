@@ -15,6 +15,7 @@
         <EntityTypeShape EntityType="OTIS_POCModel.tblWholesaler" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="OTIS_POCModel.Venue" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
         <AssociationConnector Association="OTIS_POCModel.FK_tblApprovers_tblApprovers" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="OTIS_POCModel.Vw_Users" Width="1.5" PointX="9.375" PointY="6.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
